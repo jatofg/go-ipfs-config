@@ -9,4 +9,5 @@ type Experiments struct {
 	P2pHttpProxy         bool
 	StrategicProviding   bool
 	DisableWLBroadcast   bool
+	NoWLBroadcastSubset  uint
 }

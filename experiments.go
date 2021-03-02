@@ -1,5 +1,7 @@
 package config
 
+import "github.com/ipfs/go-bitswap"
+
 type Experiments struct {
 	FilestoreEnabled     bool
 	UrlstoreEnabled      bool
@@ -10,5 +12,5 @@ type Experiments struct {
 	StrategicProviding   bool
 	DisableWLBroadcast   bool
 	NoWLBroadcastSubset  float64
-	BitSwapWiretap       interface{}
+	BitSwapWiretap       bitswap.WireTap
 }

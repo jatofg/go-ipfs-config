@@ -10,4 +10,5 @@ type Experiments struct {
 	StrategicProviding   bool
 	DisableWLBroadcast   bool
 	NoWLBroadcastSubset  float64
+	BitSwapWiretap       interface{}
 }

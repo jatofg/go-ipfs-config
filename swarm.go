@@ -42,11 +42,12 @@ type Transports struct {
 	// Network specifies the base transports we'll use for dialing. To
 	// listen on a transport, add the transport to your Addresses.Swarm.
 	Network struct {
-		// All default to on.
+		// All default to on, except for Tor.
 		QUIC      Flag `json:",omitempty"`
 		TCP       Flag `json:",omitempty"`
 		Websocket Flag `json:",omitempty"`
 		Relay     Flag `json:",omitempty"`
+		Tor       Flag `json:",omitempty"`
 	}
 
 	// Security specifies the transports used to encrypt insecure network
